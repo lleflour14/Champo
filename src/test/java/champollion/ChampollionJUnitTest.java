@@ -36,5 +36,14 @@ public class ChampollionJUnitTest {
                          "L'enseignant doit maintenant avoir 30 heures prévues pour l'UE 'uml'");		
 		
 	}
+
+	@Test
+	void ajoutHNeg() {
+		try {
+			untel.ajouteEnseignement(uml, 0, -1, 0);
+			fail("La valeur négative aurait du être refusée");
+		} catch (IllegalArgumentException ex) {
+		}
+	}
 	
 }
