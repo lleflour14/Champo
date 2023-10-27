@@ -19,6 +19,7 @@ public class ChampollionJUnitTest {
 	public void testNouvelEnseignantSansService() {
 		assertEquals(0, untel.heuresPrevues(),
                         "Un nouvel enseignant doit avoir 0 heures prévues");
+
 	}
 	
 	@Test
@@ -45,5 +46,7 @@ public class ChampollionJUnitTest {
 		} catch (IllegalArgumentException ex) {
 		}
 	}
+
+
 	
 }
